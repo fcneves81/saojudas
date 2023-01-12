@@ -1,0 +1,319 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/***********************/
+/* 1 - Estilos gerais  */
+/***********************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Oswald', sans-serif;
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    width: 140px;
+    height: 2px;
+    margin: 20px auto;
+    border: none;
+    background-color: red;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+    padding: 0 15px;
+    line-height: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    
+}
+
+p em {
+    font-style: italic;
+}
+
+.titulo__secao {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+/***********************/
+/*     2 - Header      */
+/***********************/
+
+.header-bg {
+    background-color: #0c5149;
+    padding: 55px calc((100% - 960px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+.logo {
+    margin: 10px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav__link {
+    text-transform: uppercase;
+    padding: 20px 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.titulo__principal {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+@media (max-width: 800px) {
+    .header-bg {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .links li{
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
+/***********************/
+/*     3 - Historia    */
+/***********************/
+
+.historia {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.historia-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.historia-c__texto {
+    flex: 6 1 160px;
+}
+
+.historia-c__img {
+    flex: 1 1 350px;
+    padding: 10px;
+    border: 2px solid white;
+    box-shadow: 3px 3px 12px black;
+}
+
+@media (max-width: 800px) {
+    .historia-c__texto {
+        margin-bottom: 20px;
+    }
+}
+
+/***********************/
+/*     4 - Devoção     */
+/***********************/
+
+.devocao {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.devocao-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.devocao-c__img {
+    flex: 1 1 330px;
+    padding: 10px;
+    border: 2px solid white;
+    box-shadow: 3px 3px 12px black;
+}
+
+.devocao-c__texto {
+    flex: 6 1 160px;
+}
+
+figcaption {
+    background-color: #ccc;
+    color: #000;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .devocao-c__img  {
+        margin-bottom: 20px;
+    }
+}
+
+/***********************/
+/*     5 - Oração      */
+/***********************/
+
+.oracao {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.oracao-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.oracao-c__texto {
+    flex: 6 1 160px;
+}
+
+.oracao-c__img {
+    flex: 1 1 330px;
+    padding: 10px;
+    border: 2px solid white;
+    box-shadow: 3px 3px 12px black;
+}
+
+@media (max-width: 800px) {
+    .oracao-c__texto  {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/***********************/
+/*     6 - Biblia      */
+/***********************/
+
+.biblia {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.biblia-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.biblia-c__img {
+    flex: 1 1 330px;
+    padding: 10px;
+    border: 2px solid white;
+    box-shadow: 3px 3px 12px black;
+}
+
+.biblia-c__texto {
+    flex: 6 1 160px;
+}
+
+@media (max-width: 800px) {
+    .biblia-c__img  {
+        margin-bottom: 20px;
+    }
+}
+
+/***********************/
+/*  7 - Dedicatoria    */
+/***********************/
+
+.dedicatoria {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.dedicatoria-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.dedicatoria-c__texto {
+    flex: 6 1 160px;
+}
+
+.dedicatoria-c__img {
+    flex: 1 1 330px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 3px 3px 12px black;
+}
+
+@media (max-width: 800px) {
+    .dedicatoria-c__texto  {
+        margin-bottom: 20px;
+    }
+}
+
+
+/***********************/
+/*     8 - Footer      */
+/***********************/
+
+footer{
+    padding: 55px calc((100% - 960px) / 2);
+    text-align: center;
+    background-image: url(/img/padded.png);
+    margin-top: 25px;
+    color: white;
+}
+
+h4 {
+    padding: 30px;
+}
+
+.contato li{
+    display: inline-block;
+    margin: 15px 0 0 15px;
+    font-size: 2em;
+    transition: 1s all ease-in-out;
+}
+  
+.contato li:nth-child(1n):hover{
+    transform: rotate(10deg) scale(2);
+}
+  
+.contato li:nth-child(2n):hover{
+    transform: rotate(-10deg) scale(2);
+}
