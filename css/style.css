@@ -294,7 +294,8 @@ figcaption {
 footer{
     padding: 55px calc((100% - 960px) / 2);
     text-align: center;
-    background: #24292f;
+    /*background: #24292f;*/
+    background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/padded.png');	
     margin-top: 25px;
     color: white;
 }
